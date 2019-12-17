@@ -1,5 +1,5 @@
 # 特電Spartan7 FPGA評価ボード
-特殊電子回路㈱では、産業用途の機器開発やIoT機器のプロトタイピングに最適な、Sparatn-7 FPGA評価ボードを開発しています。
+特殊電子回路㈱では、産業用途の機器開発やIoT機器のプロトタイピングに最適な、Sparatn-7 FPGA評価ボードを開発しています。FPGA単体で俊敏に動く装置の開発や、MicroBlazeやRISC-Vを用いたFPGA内マイコンによるアプリの開発を応援しています。
 
 <img src="https://github.com/tokuden/Spartan7/blob/master/img/pcball.png" width="320">
 
@@ -69,4 +69,32 @@ USBのデバイスドライバと、C#で開発可能なDLLとAPIは弊社から
 ![](https://github.com/tokuden/Spartan7/blob/master/pcb/BOT.pdf)
 <a href="https://github.com/tokuden/Spartan7/blob/master/pcb/BOT.pdf">クリックでPDFをダウンロード<br><img src="https://github.com/tokuden/Spartan7/blob/master/img/pcbbot.png"></a>
 
+# FPGAの設計
 
+FPGAの設計データはここからダウンロードできます。
+![](https://github.com/tokuden/Spartan7/fpga)
+<a href="https://github.com/tokuden/Spartan7/fpga">クリックでプロジェクトの元をダウンロード<br><img src="https://github.com/tokuden/Spartan7/blob/master/img/fpga_design.png"></a>
+
+## プロジェクトの作成
+このアーカイブの中に、Vivadoのプロジェクト(*.xpr)やブロックデザインは含まれていません。プロジェクトとBDファイル、MIG設定ファイルはTCLスクリプトによって自動的に生成されます。
+
+まず、以下のCMDファイルをメモ帳などで開き、Vivadoをインストールしたパスと、バージョンを書き換えます。Vivadoのバージョンは2018.3以降が必須です。
+
+```SEGGINGS.CMD:
+@SET VIVADO_PATH=D:\Xilinx\Vivado\
+@SET VIVADO_VERSION=2018.3
+```
+
+もし、2018.3ではないバージョンのVivadoで開発する場合には、fpga/src/design_1_bd.tclの23行目に書かれているバージョンを書き換えてください
+
+```
+################################################################
+# Check if script is running in correct Vivado version.
+################################################################
+set scripts_vivado_version 2018.3
+set current_vivado_version [version -short]
+
+open_project_gui.cmd をダブルクリックすると、Vivadoが開き、プロジェクトとBlock Designが生成されます
+
+## プロジェクトの論理合成
+VivadoでGenerate Bitstremを行うか、TCLコマンドラインに、```NahiRun```と入力してください。
