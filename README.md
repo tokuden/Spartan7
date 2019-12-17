@@ -101,6 +101,11 @@ set current_vivado_version [version -short]
 ![](https://github.com/tokuden/Spartan7/blob/master/img/howtogenerate_xpr.png)
 
 ## プロジェクトの論理合成
-VivadoでGenerate Bitstremを行うか、TCLコマンドラインに、```NahiRun```と入力してください。
+VivadoでGenerate Bitstremを行っても良いのですが、TCLコマンドラインに NahiRun と入力したほうが楽にできます。NahiRunでは、Vivadoコメントからのパラメータカスタマイズや子IPの自動Updateに対応しているので、できるだけNahiRunコマンドを使用してください。
 
 ![](https://github.com/tokuden/Spartan7/blob/master/img/use_nahirun.png)
+
+## 出来上がったBitStreamの所在
+通常はfpga/vivado/vivado.runs/impl_1/にdesign_1_wrapper.bitとして生成されますが、NahiRunで論理合成した場合にはfpgaフォルダの一番上にコピーされてきます。
+
+![](https://github.com/tokuden/Spartan7/blob/master/img/generate_bitstream.png)
