@@ -1,5 +1,7 @@
 # 特電Spartan7 FPGA評価ボード
 このボードは、Sparatn-7 FPGAを搭載した評価ボードです。
+<img src="https://github.com/tokuden/Spartan7/blob/master/img/pcball.png" width="320">
+
 以下の特徴を持ちます
 
 ## 特徴
@@ -26,5 +28,7 @@
 - Micro SDカードスロット
 - 100BASE-TX LAN用コネクタ
 
-#
+# 図面
+[基板 表面]()
+[基板 裏面]()
 
