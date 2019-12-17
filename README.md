@@ -92,7 +92,7 @@ FPGAの設計データはここからダウンロードできます。
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2018.3
+***set scripts_vivado_version 2018.3***
 set current_vivado_version [version -short]
 ```
 
@@ -102,3 +102,5 @@ set current_vivado_version [version -short]
 
 ## プロジェクトの論理合成
 VivadoでGenerate Bitstremを行うか、TCLコマンドラインに、```NahiRun```と入力してください。
+
+![](https://github.com/tokuden/Spartan7/blob/master/img/use_nahirun.png)
