@@ -73,7 +73,7 @@ USBのデバイスドライバと、C#で開発可能なDLLとAPIは弊社から
 
 FPGAの設計データはここからダウンロードできます。
 
-![](https://github.com/tokuden/Spartan7/fpga)
+![](https://github.com/tokuden/Spartan7/tree/master/fpga)
 <a href="https://github.com/tokuden/Spartan7/fpga">クリックでプロジェクトの元をダウンロード<br><img src="https://github.com/tokuden/Spartan7/blob/master/img/fpga_design.png"></a>
 
 ## プロジェクトの作成
