@@ -1,5 +1,6 @@
 # 特電Spartan7 FPGA評価ボード
-このボードは、Sparatn-7 FPGAを搭載した評価ボードです。
+特殊電子回路㈱では、Sparatn-7 FPGAを搭載した評価ボードを開発しています。
+
 <img src="https://github.com/tokuden/Spartan7/blob/master/img/pcball.png" width="320">
 
 以下の特徴を持ちます
@@ -29,8 +30,8 @@
 - 100BASE-TX LAN用コネクタ
 
 # 図面
-![https://github.com/tokuden/Spartan7/blob/master/img/pcbtop.png]
+![](https://github.com/tokuden/Spartan7/blob/master/img/pcbtop.png)
 [基板 表面](https://github.com/tokuden/Spartan7/blob/master/pcb/TOP.pdf)
-![https://github.com/tokuden/Spartan7/blob/master/img/pcbbot.png]
+![](https://github.com/tokuden/Spartan7/blob/master/img/pcbbot.png)
 [基板 裏面](https://github.com/tokuden/Spartan7/blob/master/pcb/BOT.pdf)
 
