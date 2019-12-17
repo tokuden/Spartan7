@@ -73,8 +73,7 @@ USBのデバイスドライバと、C#で開発可能なDLLとAPIは弊社から
 
 FPGAの設計データはここからダウンロードできます。
 
-![](https://github.com/tokuden/Spartan7/tree/master/fpga)
-<a href="https://github.com/tokuden/Spartan7/fpga">クリックでプロジェクトの元をダウンロード<br><img src="https://github.com/tokuden/Spartan7/blob/master/img/fpga_design.png"></a>
+<a href="https://github.com/tokuden/Spartan7/tree/master/fpga">クリックでプロジェクトの元をダウンロード<br><img src="https://github.com/tokuden/Spartan7/blob/master/img/fpga_design.png"></a>
 
 ## プロジェクトの作成
 このアーカイブの中に、Vivadoのプロジェクト(*.xpr)やブロックデザインは含まれていません。プロジェクトとBDファイル、MIG設定ファイルはTCLスクリプトによって自動的に生成されます。
