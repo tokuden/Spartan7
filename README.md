@@ -91,7 +91,7 @@ FPGAの設計データはここからダウンロードできます。
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-***set scripts_vivado_version 2018.3***
+set scripts_vivado_version 2018.3
 set current_vivado_version [version -short]
 ```
 
