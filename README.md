@@ -98,7 +98,7 @@ set current_vivado_version [version -short]
 
 アーカイブ中の open_project_gui.cmd をダブルクリックすると、Vivadoが開き、プロジェクトとBlock Designが生成されます
 
-![](https://github.com/tokuden/Spartan7/blob/master/img/howtogenerate.png)
+![](https://github.com/tokuden/Spartan7/blob/master/img/howtogenerate_xpr.png)
 
 ## プロジェクトの論理合成
 VivadoでGenerate Bitstremを行うか、TCLコマンドラインに、```NahiRun```と入力してください。
