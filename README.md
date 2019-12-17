@@ -53,14 +53,14 @@ USBのデバイスドライバと、C#で開発可能なDLLとAPIは弊社から
 - 100BASE-TX LAN用コネクタ
 
 # 図面
-## 基板 表面 PDF
+## 基板 表面
 
 ![](https://github.com/tokuden/Spartan7/blob/master/pcb/TOP.pdf)
-<a href="https://github.com/tokuden/Spartan7/blob/master/pcb/TOP.pdf"><img src="https://github.com/tokuden/Spartan7/blob/master/img/pcbtop.png"></a>
+<a href="https://github.com/tokuden/Spartan7/blob/master/pcb/TOP.pdf">クリックでPDFをダウンロード<img src="https://github.com/tokuden/Spartan7/blob/master/img/pcbtop.png"></a>
 
-## 基板 裏面 PDF
+## 基板 裏面
 
 ![](https://github.com/tokuden/Spartan7/blob/master/pcb/BOT.pdf)
-<a href="https://github.com/tokuden/Spartan7/blob/master/pcb/BOT.pdf"><img src="https://github.com/tokuden/Spartan7/blob/master/img/pcbbot.png"></a>
+<a href="https://github.com/tokuden/Spartan7/blob/master/pcb/BOT.pdf">クリックでPDFをダウンロード<img src="https://github.com/tokuden/Spartan7/blob/master/img/pcbbot.png"></a>
 
 
