@@ -72,6 +72,7 @@ USBのデバイスドライバと、C#で開発可能なDLLとAPIは弊社から
 # FPGAの設計
 
 FPGAの設計データはここからダウンロードできます。
+
 ![](https://github.com/tokuden/Spartan7/fpga)
 <a href="https://github.com/tokuden/Spartan7/fpga">クリックでプロジェクトの元をダウンロード<br><img src="https://github.com/tokuden/Spartan7/blob/master/img/fpga_design.png"></a>
 
@@ -97,7 +98,7 @@ set current_vivado_version [version -short]
 
 アーカイブ中の open_project_gui.cmd をダブルクリックすると、Vivadoが開き、プロジェクトとBlock Designが生成されます
 
-[](https://github.com/tokuden/Spartan7/blob/master/img/howtogenerate.png)
+![](https://github.com/tokuden/Spartan7/blob/master/img/howtogenerate.png)
 
 ## プロジェクトの論理合成
 VivadoでGenerate Bitstremを行うか、TCLコマンドラインに、```NahiRun```と入力してください。
