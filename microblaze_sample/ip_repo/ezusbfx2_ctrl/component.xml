@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>ezusbfx2_wrapper</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>FX2</spirit:name>
+      <spirit:busType spirit:vendor="tokudenkairo.co.jp" spirit:library="user" spirit:name="fx2" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="tokudenkairo.co.jp" spirit:library="user" spirit:name="fx2_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>slwr</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_slwr_op</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ifclk</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_ifclk_op</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>clkout</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_clkout_ip</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>flagc</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_flagc_ip</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>flagb</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_flagb_ip</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>flaga</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_flaga_ip</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>sloe</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_sloe_op</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>pktend</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_pktend_op</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>fifoadr</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_fifoaddr_op</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>fd</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_fd_bp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>slrd</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>usb_slrd_op</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>ezusbfx2_ctrl</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>b294f466</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>ezusbfx2_ctrl</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>b294f466</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>usb_clkout_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_ifclk_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_fd_bp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_flaga_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_flagb_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_flagc_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_sloe_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_slrd_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_slwr_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_fifoaddr_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>usb_pktend_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_sysclk_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_reset_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_rd_data_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_wr_data_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_rd_rdy_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_rd_wait_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_wr_req_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_wr_wait_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_rd_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_wr_ip</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_usbclk_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_length_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">24</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_addr_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">26</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_flag_op</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uif_debug</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/asyncfifo/asyncfifo.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>FX2_48MHz.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>usb_ctrl.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_c05ee296</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="clk_wiz" xilinx:version="6.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/asyncfifo/asyncfifo.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>FX2_48MHz.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>usb_ctrl.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="clk_wiz" xilinx:version="6.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/ezusbfx2_wrapper_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>ezusbfx2_wrapper_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">ezusbfx2_wrapper_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>ezusbfx2_wrapper_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>45</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-12-30T18:24:51Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@522118bb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ca4f505_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f55e0f4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@580071d4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51f15c10_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@633755ef_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17383896_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49873891_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a452d9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12bdb3ad_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f2822f9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f9ff94f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ee7ec75_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ee972cc_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ef6f8b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6be61569_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@318e614a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7645be39_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23c38283_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ecea262_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f1bba36_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6addaa88_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bb93816_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@250863c5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32fa6414_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52bcb5b6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@113b830d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53f093f4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c26180_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34bd44da_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16d163ad_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7adcf2fb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b2afe92_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29f618ac_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@724dafbf_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e9f37ab_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63b7b54d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e8d831e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3a9f30_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42ea0429_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22e43f4b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@604e2d2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@236eb805_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e02727b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@113995b9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@da541b1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78bc1c3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31230e2b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cce9216_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@380690b0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@244b1958_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@341e4600_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c1eb377_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b04dbb4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@572a0d55_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ceee547_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d2a418c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b0aa0d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2de52f5f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38468bc0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b56438e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ce0b055_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@872f423_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@570a34c1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12c67271_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76b2632_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37c302df_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18f46acc_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77b65b69_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7988d8b1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17878f46_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32302ef_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624ff51b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@120603bd_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@723a6cd9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a132ac_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f5acb0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@561f8dc5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e2af249_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e90e33a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@774c7104_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47f0e563_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d15d6f1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4068597e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50337528_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cd30ab9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@686d0d1d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27993a9a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d90523e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@192363b5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ebf446f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36ddf6ca_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14852fa_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bcbaf6a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca6fe23_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22c1564b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23952ed8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@506fc9b1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bf540d2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b2d2a30_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@520c01c9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5df2ae48_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e872fc9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71c92679_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d88b8c8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@499a9180_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ebcb13_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ebe2e29_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d65e5be_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b20f4df_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f26db04_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b16236e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14323b6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51e37f93_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d1547af_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17b06ed2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64319408_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@142e91b8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b86b7ac_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d0506a6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41655f5d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@662c1986_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6266c125_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@182552c7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@134d4cda_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c1a5714_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76148432_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23fe60a9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e74a250_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee911cb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70dfa4e0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cc59a01_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e60def5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78c766ca_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12676248_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fcfbd8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ea6bbb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49925ef9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73377776_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aeb639_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@250f5b49_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3056476e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b2d80e1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e450564_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dc275b6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39e80e7a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15892ac8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42ec55af_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6857a192_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19657c47_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72eae0e5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9fb5467_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d2a1b15_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4296091e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@563e2753_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57a9d107_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba23b7c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40046166_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3743a48b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f3c9b43_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11baa38e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@422b674b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ce7e2c5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e1ffdd2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f19414d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69a6c062_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263cbd57_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3710e559_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18c859c3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23874bfa_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28ee5e95_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@528e6324_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@594256e5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e093b4d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61e015a5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ff99bae_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f3dad00_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d665822_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fa90053_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263eb9ef_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3544b4a5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@627a2e8d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c1d75fd_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46939a7a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ae270aa_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63885d5b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aff0294_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50fe2f74_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a70765f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a229e62_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e7c9bee_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@170f5855_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd18638_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d1f8a53_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d671a65_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6619ddf1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36c1faa3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a92e622_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63d36408_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d52035_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72c9fec3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5563b45e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c0b64c5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51f4cb45_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18641f81_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6369acd6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3031cd4e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363d5cc6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28f8cd44_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4342c5f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66ae5662_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eabd885_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37b42022_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@750d329e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c27ae44_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa6e06b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7849f211_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76a02326_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@509cf78f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19fa41bb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54c6c984_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@620a89db_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58dec2a3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b5314d2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e53e1fb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@421a64ed_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cf02d24_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cc9e915_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@140981db_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48fcaf2c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64931d34_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2748b10a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6300e2c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1253fb9b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@494c6f0a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47c93ee0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@454939db_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ae033f0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2068b65a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d3c33fa_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a5a511_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a345715_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5765da6f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@560b2399_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a56e964_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@252eea2a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a64648a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@212189e2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6868c58_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@341db051_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@159e0ec8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@488fac0e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30bef3eb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bb6d71f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cad72e4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ba97622_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263b7202_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20ec6e81_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ddc1780_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a58b3c7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73093cdf_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f3541b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63de345b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f251fa7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a4da90_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d43330_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e6cc5c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6917b35_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@232a3431_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4feafd83_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@498538d7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45bede3f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75983931_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4242c0f9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d7e163b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@308ee96c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41877888_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69209579_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a00ee20_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31593429_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b6f05c8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57f58a41_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7170e5fb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1409061b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ffc93c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@754ff709_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59a4d606_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d157728_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70cc1af6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6280cad7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d61fe31_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@817f2c0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a381325_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@238ca10c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@239d75c1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12ed7c4c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ed3ee1f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56cf7ba6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b343c72_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ebfda36_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1226a257_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4507ca59_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4be8aa79_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b5af0c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48f68a60_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eb19c0f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec3a6eb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f64ae2e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e3dfbc9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263775b7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42713ad1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a99c861_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ef7226_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0efc3d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34f1eb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d5c6f89_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a7340fc_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d99fc66_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37db47a8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43f02946_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bc1d9ed_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@610e1047_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25d3d4c2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b4e7d2d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73cb1b3b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33eacf23_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b96c3af_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b8042d7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68236af5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7309371a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@530888f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5481a25d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e552a2c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@706b9c6b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3eed51fb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370264e4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@117e6fe0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6624f469_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b7e1cf_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a7e9da_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39a59e72_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2db6cb18_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4571b0af_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@287d6a38_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21626bf1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e0418ad_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ce61b9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a537607_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fb10a6f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5545a7a6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63a544a2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ede5dad_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a9d5731_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2092964f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8a065a3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eca53a5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f75ce87_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27da08ae_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1209698f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e3a2362_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@113d0505_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a22d384_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64ecadae_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41d226ac_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@547017e0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49a11612_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c4a923c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44f0b16c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f5c6460_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3edab589_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bc937fd_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c069b6c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ab901c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72b684cc_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@598b49a4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd37fa2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3de23df0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@627a8405_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e8afad_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64f7fc52_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d8e76bf_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d05c119_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c463cfd_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@360bbfa0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ea5f84_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b45628_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73071243_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e3b8c40_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d8941e9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e367d81_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e4ee121_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3781d573_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e81055f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b81f295_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f8e3b41_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4729f58d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41cd3c0e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7621073b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f81a14_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624a535f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f651bea_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@723bb06e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58a25583_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ce19e26_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9dd2c2a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15780a4e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7daf0ef9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3757b381_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5784b370_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d190c29_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4baffb42_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d5ad54c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b1738d4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@504daa9c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61e3730c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@566b4bb6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18ee9c17_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dcfe2fc_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ce7d7ed_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36149ce2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@584114aa_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7640b33_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d9e9f4e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53525391_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11562e08_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d0dd1df_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56932db1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f129a0a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@491850c1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e5854b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16a5ee13_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52069d45_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ca913d1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7365a58b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2050e30c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d7bacce_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62440c04_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3798e09_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11d663e5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@580b8fb3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15bd3d55_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@357e912e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ed06c30_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cba9a4a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fd93db9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fddb95e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fb50145_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5169c703_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b1c5cb7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d131aa5_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c2588cb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42ed5488_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@507b627a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@659a6b16_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@635ba2d8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fe8b712_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10bc9828_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c0a4082_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fda620c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c145034_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ce0410b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5990953c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48b91f22_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dd93ec4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dde51ed_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61d89bd8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17ce421b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28f0cb2d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e517a50_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c20eb97_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8be29_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1de3750d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5114c0d3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25114b00_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d05e1e8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7680d295_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b78eafc_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2880cc77_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11fc95da_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9f3b43c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@194131de_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bbf54ad_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e8b2cdb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47e3b384_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e4b4b54_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63661218_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2552bf7d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@266e4e5c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4367c73_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ebbf194_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6987b03d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76d7bbca_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cf24223_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b5e4626_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15171d3d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a290cd1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@226c91ff_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b4e1c39_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44adabc9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35599645_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36556fa4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49dd4515_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a842cb1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71476032_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23cd6bf4_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9b830d7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22b18ffb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e13e94f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d11e0ed_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50a9964c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@277a0e48_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d008819_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d244381_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b9559b7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25dbb53c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59d5e30d_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f6c491_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7785ec2b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b449226_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70a77379_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@630688ac_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76e560f3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b4567b0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47b5f7af_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@704c25c9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b1f7cc1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f424f15_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a863266_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2803aded_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58acc34f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dbfb7c0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2246da_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b4b53ed_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a18ec0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23ca6e3c_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3caee2f2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b01d83b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c2c9779_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4707d07e_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bac0ee9_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e183e6_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bb8f2d1_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@392023c8_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a656dda_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dd2f390_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48406857_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5afdc5f2_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bff0d7b_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bc22946_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3919bb68_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@354b8977_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@348062f_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65f29625_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59f6aa97_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6125d53a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d5b0d0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72e7aea0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17821231_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b6a77e3_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a3f3213_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@325ec296_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c2aecd7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@200f7a73_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@443a58b0_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ae67db7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56d1fc9a_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70a06cc7_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@403b31cb_ARCHIVE_LOCATION">d:/naitou/np1116/sample/ip_repo/ezusbfx2_ctrl</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0c114cd7"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e0e89092"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="4cbaecda"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a8c75ea0"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
