@@ -20,3 +20,10 @@ microblaze_sample/ip_repo/ezusbfx2_ctrl/src/clk_wiz_0/clk_wiz_0.vho
 microblaze_sample/ip_repo/ezusbfx2_ctrl/src/asyncfifo/asyncfifo.vho
 microblaze_sample/ip_repo/ezusbfx2_ctrl/src/asyncfifo/asyncfifo.xml
 microblaze_sample/ip_repo/ezusbfx2_ctrl/src/asyncfifo/asyncfifo.veo
+microblaze_sample/ip_repo/axisrc/axisrc_v1_0_project/
+microblaze_sample/ip_repo/axisrc/axisrc.hw/
+microblaze_sample/ip_repo/axisrc/axisrc.cache/
+microblaze_sample/ip_repo/axisrc/axisrc.runs/
+*.log
+*.jou
+microblaze_sample/ip_repo/axisrc/axisrc.xpr
